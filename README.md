@@ -38,3 +38,11 @@ npm install -g webpack-dev-server@1
 http://localhost:8080/
 http://localhost:8080/webpack-dev-server/
 ```
+
+# React
+
+- Instalar Dependências
+
+```npm
+npm install --save react@15.4 react-dom@15.4
+```
