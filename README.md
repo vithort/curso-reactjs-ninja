@@ -46,3 +46,9 @@ http://localhost:8080/webpack-dev-server/
 ```npm
 npm install --save react@15.4 react-dom@15.4
 ```
+
+- Instalar Dependências
+
+```npm
+npm install --save-dev babel-core@6 babel-loader@6 babel-preset-es2015@6 babel-preset-stage-0@6
+```
