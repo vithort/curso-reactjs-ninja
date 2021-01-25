@@ -60,3 +60,9 @@ npm install --save-dev babel-core@6 babel-loader@6 babel-preset-es2015@6 babel-p
 ```npm
 npm install --save-dev babel-preset-react@6
 ```
+
+- Instalar react-hot-loader
+
+```npm
+npm install --save-dev react-hot-loader@3.0.0-beta.2
+```
