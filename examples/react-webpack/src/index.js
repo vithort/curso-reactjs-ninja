@@ -1,12 +1,26 @@
-'use strict'
+'use strict';
 
-import React from 'react'
-import { render } from 'react-dom'
+import React from 'react';
+import { render } from 'react-dom';
 // import { render } from './react-dom'
 // import { render as reactDomRender } from './react-dom'
-import Title from './app'
+import { AppContainer } from 'react-hot-loader';
+import App from './app';
 
-render(
-  <Title/>,
-  document.querySelector('[data-js="app"')
-)
+const renderApp = (NextApp) => {
+  render(
+    <AppContainer>
+      <NextApp />
+    </AppContainer>,
+    document.querySelector('[data-js="app"')
+  );
+};
+
+renderApp(App);
+
+if (module.hot) {
+  module.hot.accept('./app', () => {
+    const NextApp = require('./app').default;
+    renderApp(NextApp);
+  });
+}
