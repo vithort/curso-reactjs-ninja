@@ -66,3 +66,15 @@ npm install --save-dev babel-preset-react@6
 ```npm
 npm install --save-dev react-hot-loader@3.0.0-beta.2
 ```
+
+- Instalar
+
+```npm
+npm install --save-dev standard standard-loader@4
+```
+
+- Instalar Webpack Validator
+
+```npm
+npm install --save-dev webpack-validator
+```

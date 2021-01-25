@@ -1,11 +1,11 @@
-'use strict';
+'use strict'
 
-import React from 'react';
-import { render } from 'react-dom';
+import React from 'react'
+import { render } from 'react-dom'
 // import { render } from './react-dom'
 // import { render as reactDomRender } from './react-dom'
-import { AppContainer } from 'react-hot-loader';
-import App from './app';
+import { AppContainer } from 'react-hot-loader'
+import App from './app'
 
 const renderApp = (NextApp) => {
   render(
@@ -13,14 +13,14 @@ const renderApp = (NextApp) => {
       <NextApp />
     </AppContainer>,
     document.querySelector('[data-js="app"')
-  );
-};
+  )
+}
 
-renderApp(App);
+renderApp(App)
 
 if (module.hot) {
   module.hot.accept('./app', () => {
-    const NextApp = require('./app').default;
-    renderApp(NextApp);
-  });
+    const NextApp = require('./app').default
+    renderApp(NextApp)
+  })
 }
